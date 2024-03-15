@@ -7,4 +7,4 @@ function Colorize(color)
 end
 
 
-Colorize()
+-- Colorize()

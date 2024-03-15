@@ -21,7 +21,7 @@ set nobackup         " No backup files
 set nowritebackup    " No backup files
 set splitright       " Create the vertical splits to the right
 set splitbelow       " Create the horizontal splits below
-set autoread         " Update vim after file update from outside
+set autoread         " Update vim after file update from outsidE
 set mouse=a          " Enable mouse support
 filetype on          " Detect and set the filetype option and trigger the FileType Event
 filetype plugin on   " Load the plugin file for the file type, if any
@@ -29,4 +29,22 @@ filetype indent on   " Load the indent file for the file type, if any
 
 """""""""""""""MAPPING"""""""""""""""""""""""
 :nmap <space>e <Cmd>CocCommand explorer<CR>
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+let g:sonokai_style = 'andromeda'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 0
+let g:sonokai_diagnostic_line_highlight = 1
+let g:sonokai_current_word = 'bold'
+colorscheme sonokai
+
+if (has("nvim")) "Transparent background. Only for nvim
+    highlight Normal guibg=NONE ctermbg=NONE
+    highlight EndOfBuffer guibg=NONE ctermbg=NONE
+endif
 

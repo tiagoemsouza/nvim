@@ -1,4 +1,6 @@
-
+require("tesProfile.set")
 require("tesProfile.packer")
 require("tesProfile.remap")
-print("hello from tesProfile")
+require("tesProfile.coc")
+--require("tesProfile.lsp")
+--require("tesProfile.cmp")

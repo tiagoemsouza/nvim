@@ -16,28 +16,36 @@ return require('packer').startup(function(use)
 
   use 'mbbill/undotree'
   use {'neoclide/coc.nvim', branch = 'release'}
-  use ({ "rose-pine/neovim", as = "rose-pine", config = function()
-	vim.cmd('colorscheme rose-pine')
-	end
-  })
+--  use ({ "rose-pine/neovim", as = "rose-pine", config = function()
+--	vim.cmd('colorscheme rose-pine')
+--	end
+--  })
 
-  use ({ 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
+  use 'sainnhe/sonokai'
 
-  use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
-	  requires = {
-		  --- Uncomment the two plugins below if you want to manage the language servers from neovim
-		  -- {'williamboman/mason.nvim'},
-		  -- {'williamboman/mason-lspconfig.nvim'},
+  use 'vim-airline/vim-airline'
 
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
-	  }
-  }
+  use { 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'} } 
+
+--  use {
+--	  'VonHeikemen/lsp-zero.nvim',
+--	  branch = 'v3.x',
+--	  requires = {
+--		  --- Uncomment the two plugins below if you want to manage the language servers from neovim
+--		  -- {'williamboman/mason.nvim'},
+--		  -- {'williamboman/mason-lspconfig.nvim'},
+--
+--		  -- LSP Support
+--		  {'neovim/nvim-lspconfig'},
+--		  -- Autocompletion
+--		  {'hrsh7th/nvim-cmp'},
+--		  {'hrsh7th/cmp-nvim-lsp'},
+--		  {'L3MON4D3/LuaSnip'},
+--	  }
+--  }
+
+ use { 'ryanoasis/vim-devicons' }
+
+ use { 'preservim/nerdtree' }
 
 end)
