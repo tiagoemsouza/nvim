@@ -123,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\tes6319\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
+  },
+  ["vim-sftp-sync"] = {
+    loaded = true,
+    path = "C:\\Users\\tes6319\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-sftp-sync",
+    url = "https://github.com/eshion/vim-sftp-sync"
   }
 }
 

@@ -1,3 +1,5 @@
+print "echoing tesProfile/init.lua"
+
 require("tesProfile.set")
 require("tesProfile.packer")
 require("tesProfile.remap")

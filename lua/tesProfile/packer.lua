@@ -48,4 +48,9 @@ return require('packer').startup(function(use)
 
  use { 'preservim/nerdtree' }
 
+ use { 'eshion/vim-sftp-sync' }
+
+-- use { 'dcampos/nvim-sftp-sync', { run = ':UpdateRemotePlugins' } }
+
+
 end)

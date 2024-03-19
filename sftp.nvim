@@ -1,0 +1,19 @@
+echo 'echoing from sftp.nvim'
+
+let g:vim_sftp_configs = {
+        \   'sample_server_1' : {
+        \    	'upload_on_save'   : 1,
+        \    	'download_on_open' : 0,
+        \    	'confirm_downloads': 1,
+        \    	'confirm_uploads'  : 0,
+        \		'local_base_path'  : 'D:\\wamp64\\www\\diarias.alesc.sc.gov.br',
+        \		'remote_base_path' : '/var/www/html/diariasphp7.alesc.sc.gov.br',
+        \		'sftp_command' : 'sftp',
+        \		'user' : 'usuario',
+        \		'pass' : 'senha',
+        \		'host' : '10.12.6.10',
+        \	}
+\}
+
+
+echo 'echoing from sftp.nvim'
